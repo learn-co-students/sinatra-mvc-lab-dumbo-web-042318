@@ -1,0 +1,19 @@
+<% 
+  phrase = params[:user_phrase] 
+  piggy = PigLatinizer.new  
+  fin = piggy.piglatinize(phrase)
+%>
+
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset=utf-8">
+    <meta name="viewport" content="width=375, initial-scale=1">
+    <meta name="author" content="Mike Cronin">
+    <meta name="description" content="DESCRIPTION">
+    <title>gettin piggy with it</title>
+  </head>
+  <body>
+    <%= fin %>
+  </body>
+</html>
